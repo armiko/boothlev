@@ -1,6 +1,0 @@
-#!/usr/bin/expect -f
-set timeout -1
-spawn ssh -p 1757 -o StrictHostKeyChecking=no root@154.12.118.208 "/etc/init.d/nginx restart"
-expect "password:"
-send "7bTMT5NR\r"
-expect eof
