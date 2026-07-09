@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+set timeout -1
+spawn ssh -p 1757 -o StrictHostKeyChecking=no root@154.12.118.208
+expect "password:"
+send "7bTMT5NR\r"
+expect "#"
+
+send "cat /www/server/panel/vhost/nginx/booth.ktik.me.conf\r"
+expect "#"
+
+send "nginx -t\r"
+expect "#"
+
+send "/etc/init.d/nginx restart\r"
+expect "#"
+
+send "exit\r"
+expect eof
