@@ -21,18 +21,18 @@ graph TD
 
 ## Detailed Steps
 
-1. **Pilih Template:** User melihat daftar template (Korean, Film Strip, dll) beserta detail jumlah slot foto.
+1. **Pilih Template:** User melihat daftar template beserta detail jumlah slot foto.
 2. **Pilih Sumber Foto:**
-   - **Upload:** User memilih file dari device (mendukung select multiple files).
+   - **Upload:** User memilih file dari device.
    - **Kamera:** Meminta izin akses kamera via WebRTC.
 3. **Mode Photobooth (Kamera):**
    - Pengalaman layaknya photobooth asli.
-   - Timer otomatis (3s, 5s, 10s) untuk setiap frame.
+   - Timer otomatis (3s) untuk setiap frame.
    - Animasi flash dan suara shutter untuk setiap pengambilan.
 4. **Custom Waifu Upload & AI Background Removal (Standalone Backend)**
-- Pengguna dapat mengklik tombol "Upload AI" di halaman Editor.
-- Frontend mengirim foto melalui request POST `FormData` ke API eksternal `boothlev-api` (misal: `http://localhost:4000/api/remove-bg`).
-- Server `boothlev-api` menggunakan model ML *transformers.js* (`briaai/RMBG-1.4`) dan `sharp` untuk menghapus *background* tanpa membebani HP/PC pengguna.
+- Pengguna dapat mengklik tombol "Unggah Foto ke AI" di halaman Editor.
+- Frontend mengirim foto melalui request POST `FormData` ke API eksternal `backend` (misal: `http://localhost:4000/api/remove-bg`).
+- Server `backend` menggunakan model ML *transformers.js* (`briaai/RMBG-1.4`) dan `sharp` untuk menghapus *background* tanpa membebani HP/PC pengguna.
 - Server mengembalikan gambar PNG transparan.
 - Frontend merender gambar tersebut sebagai stiker (Tipe: `image`) di kanvas. Stiker ini bisa diputar, diperbesar, dan digeser.
 5. **Review Foto:**

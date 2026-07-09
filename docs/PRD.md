@@ -43,7 +43,6 @@ Users who want a quick, easy, and privacy-friendly way to create photobooth-styl
 
 ## Non-Functional Requirements
 - **Responsive:** Must be comfortable to use on mobile phones.
-- **Offline Friendly / Privacy First:** All processing must be client-side. No server uploads. Can be hosted statically (GitHub Pages, Cloudflare Pages, Vercel).
 - **Auto Save:** Uses IndexedDB or localStorage so state is preserved if the page is accidentally refreshed.
 - **High-Quality Rendering:** Preview is low-res for performance, final export is high-res (e.g., 300 DPI).
 - **Design Aesthetic:** Neo-Brutalism (Inspired by Poketo.id). Features thick borders, stark contrasts, heavy use of Archivo Black font, sharp shadows, and classic photobooth styling for templates.
