@@ -23,7 +23,7 @@ export default function Home() {
             </h1>
             
             <p className="text-base md:text-lg leading-relaxed text-gray-700 font-medium max-w-[500px] mb-8">
-              Pilih template, jepret pake webcam, atur ulang posisi, warnai frame, dan hias dengan ratusan stiker sesukamu! 100% aman di browser tanpa server.
+              Pilih template, jepret pake webcam, atur ulang posisi, warnai frame, dan hias dengan ratusan stiker sesukamu! Editor utama 100% aman berjalan di browsermu.
             </p>
             
             <div className="flex flex-wrap gap-4">
