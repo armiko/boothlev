@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-light: #FAFAFA;
+  --color-text-dark: #111111;
+  --color-primary: #FDE047; /* Yellow */
+  --color-secondary: #F9A8D4; /* Pink */
+  --color-accent: #4F46E5; /* Indigo */
+  --color-danger: #EF4444;
+  --color-success: #22C55E;
+  
+  --font-archivo: var(--font-archivo-black), "Arial Black", sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
+:root {
+  --bg-light: #FAFAFA;
+  --text-dark: #111111;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Custom Utilities for Brutalism */
+@layer utilities {
+  .brutal-border {
+    @apply border-[3px] border-text-dark;
+  }
+  .brutal-shadow {
+    @apply shadow-[6px_6px_0_#111111];
+  }
+  .brutal-shadow-sm {
+    @apply shadow-[3px_3px_0_#111111];
+  }
+  .brutal-shadow-lg {
+    @apply shadow-[10px_10px_0_#111111];
+  }
+  .brutal-hover {
+    @apply hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-[3px_3px_0_#111111] transition-all duration-150;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
