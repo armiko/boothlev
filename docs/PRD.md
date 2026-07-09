@@ -1,10 +1,10 @@
 # Product Requirements Document (PRD): Boothlev
 
 ## Overview
-Boothlev is a purely client-side web application that brings the authentic photobooth experience to users' devices (especially mobile). Users can select templates, capture photos via their camera or upload from gallery, adjust the photos, and download the high-quality final composition.
+Boothlev is a web application that brings the authentic photobooth experience to users' devices. The core editor and image rendering run fully client-side for maximum privacy and performance, while a standalone, self-hosted backend handles advanced AI tasks like background removal.
 
 ## Target Audience
-Users who want a quick, easy, and privacy-friendly way to create photobooth-style collages without installing an app or uploading photos to a server.
+Users who want a quick, easy, and privacy-friendly way to create photobooth-style collages without installing an app. Photos are kept local on the device, except when explicitly using the AI Background Removal feature which securely processes the image on a self-hosted backend.
 
 ## Features (MVP)
 1. **Template Selection**

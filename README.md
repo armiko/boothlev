@@ -1,6 +1,6 @@
 # Boothlev 📸✨
 
-Boothlev is a privacy-first, client-side only web application that brings the authentic photobooth experience directly to your browser. No app installations, no server uploads, and no hidden data collection. What happens on your device, stays on your device.
+Boothlev is a privacy-first web application that brings the authentic photobooth experience directly to your browser. The core editor runs fully client-side, and all AI features run on a self-hosted standalone backend. No app installations, no external APIs, and no hidden data collection. What happens on your device, stays on your device!
 
 Built with **Next.js**, **Zustand**, and **TailwindCSS**.
 

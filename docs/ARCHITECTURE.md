@@ -1,7 +1,7 @@
 # Architecture & Directory Structure
 
 ## Arsitektur Utama
-Aplikasi ini dirancang sebagai **Single Page Application (SPA)** yang sepenuhnya berjalan di sisi klien (Client-Side Rendering/Processing). Tidak ada backend untuk pemrosesan foto, memastikan privasi pengguna (foto tidak pernah diunggah).
+Aplikasi ini pada dasarnya dirancang sebagai **Frontend (Next.js)** yang meng-handle UI dan editor gambar di sisi klien untuk privasi maksimal, ditambah dengan **AI Backend (Node.js)** terpisah untuk memproses penghapusan latar belakang gambar menggunakan Machine Learning secara on-premise/self-hosted.
 
 ## 3. Technology Stack
 
